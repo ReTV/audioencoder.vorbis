@@ -6,14 +6,14 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 
 enable_language(CXX)
 
-find_package(kodi REQUIRED)
+find_package(retv REQUIRED)
 find_package(Ogg REQUIRED)
 find_package(Vorbis REQUIRED)
 if(NOT WIN32)
   find_package(VorbisEnc REQUIRED)
 endif()
 
-set(INCLUDE_DIRS ${KODI_INCLUDE_DIR}
+set(INCLUDE_DIRS ${RETV_INCLUDE_DIR}
                  ${OGG_INCLUDE_DIRS}
                  ${VORBIS_INCLUDE_DIRS})
 if(NOT WIN32)
